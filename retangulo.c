@@ -13,7 +13,7 @@
 int main()
 {
     
-    int resposta, altura, largura, i, j;
+    int simbolo, altura, largura, i, j;
     char nome[20], continuar;
     
     do
@@ -23,12 +23,12 @@ int main()
     
     
         printf("\nSimbolo do pixel (1 para %c, 2 para %c, 3 para %c): ", 42, 64, 43);
-        scanf("%d", &resposta);
+        scanf("%d", &simbolo);
         
-        while(resposta<1 || resposta>3)
+        while(simbolo<1 || simbolo>3)
         {
             printf("\nDesculpe...Escolha um simbolo valido (1 para %c, 2 para %c, 3 para %c): ", 42, 64, 43);
-            scanf("%d", &resposta);
+            scanf("%d", &simbolo);
         }
     
     
@@ -64,17 +64,17 @@ int main()
                 
                 else
                 {
-                    if (resposta == 1)
+                    if (simbolo == 1)
                     {    
                         printf("%c",42);
                     }
                         
-                    if (resposta == 2)
+                    if (simbolo == 2)
                     {    
                         printf("%c",64);
                     }
                         
-                    if (resposta == 3)
+                    if (simbolo == 3)
                     {    
                         printf("%c",43);
                     }
@@ -83,7 +83,7 @@ int main()
         printf("\n");
         }
         
-        printf("\nDeseja continuar (s/n)?\n");
+        printf("\nDeseja continuar (s/n)? ");
         scanf(" %c", &continuar);
     }
     while(continuar != 'n');
